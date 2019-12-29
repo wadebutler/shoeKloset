@@ -1,3 +1,30 @@
 .about {
     background: $backgroundColor;
+
+    .aboutArticle {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 80px 0;
+
+        .locationIcon, .comunityIcon, .blogIcon, .contactIcon {
+            display: flex;
+            padding: 20px;
+
+            i {
+                font-size: 4rem;
+                padding: 0 10px;
+                color: $textColor;
+            }
+
+            a {
+                font-size: 4rem;
+                color: $black;
+            }
+
+            p {
+                line-height: 25px;
+                padding: 20px 0;
+            }
+        }
+    }
 }
