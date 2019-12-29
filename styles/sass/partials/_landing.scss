@@ -1,0 +1,17 @@
+.landing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: url(../shoeAssets/header-image.jpg);
+
+    h2 {
+        font-size: 6rem;
+        color: $textColor;
+        width: 20%;
+    }
+
+    .landingPhoto {
+        width: 40%;
+    }
+}
