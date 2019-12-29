@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     background: url(../shoeAssets/header-image.jpg);
 
     h2 {
@@ -12,6 +11,8 @@
     }
 
     .landingPhoto {
-        width: 40%;
+        width: 650px;
+        position: relative;
+        top: 150px;
     }
 }

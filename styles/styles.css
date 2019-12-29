@@ -253,6 +253,21 @@ img {
   height: 100%;
 }
 
+p {
+  color: black;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 5.2rem;
+  text-transform: uppercase;
+}
+
+a {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -277,6 +292,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: fixed;
+  z-index: 1;
 }
 
 header a {
@@ -324,5 +340,87 @@ header .navigation ul li {
 }
 
 .landing .landingPhoto {
-  width: 40%;
+  width: 650px;
+  position: relative;
+  top: 150px;
+}
+
+.sea {
+  background: #FAE5FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 150px 0;
+}
+
+.sea h2 {
+  padding: 40px 0;
+  color: #4C0341;
+}
+
+.sea p {
+  padding: 80px 0;
+  text-align: center;
+  width: 70%;
+  line-height: 25px;
+}
+
+.sea a {
+  padding: 10px 20px;
+  color: white;
+  background: #4C0341;
+}
+
+.newOption {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 0.5fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 0.5fr 1fr 1fr;
+}
+
+.newOption .new {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.newOption .option {
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 6;
+}
+
+.newOption .newPhoto, .newOption .optionPhoto, .newOption .newArticle, .newOption .optionArticle {
+  height: 350px;
+}
+
+.newOption .newArticle h2, .newOption .optionArticle h2 {
+  margin: 20px 0;
+}
+
+.newOption .newArticle p, .newOption .optionArticle p {
+  margin: 80px 0;
+  line-height: 25px;
+}
+
+.newOption .newArticle a, .newOption .optionArticle a {
+  color: white;
+  background: #882C07;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.newOption .newArticle {
+  text-align: right;
+}
+
+.about {
+  background: #FAE5FF;
 }

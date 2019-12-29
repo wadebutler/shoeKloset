@@ -1,0 +1,41 @@
+.newOption {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr 1fr 1fr;
+
+    .new {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .option {
+        grid-column-start: 4;
+        grid-column-end: 6;
+    }
+
+    .newPhoto, .optionPhoto, .newArticle, .optionArticle {
+        height: 350px;
+    }
+
+    .newArticle, .optionArticle {
+
+        h2 {
+            margin: 20px 0;
+        }
+
+        p {
+            margin: 80px 0;
+            line-height: 25px;
+        }
+
+        a {
+            color: $white;
+            background: $accentColor;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    }
+
+    .newArticle {
+        text-align: right;
+    }
+}
