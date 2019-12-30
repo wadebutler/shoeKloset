@@ -268,9 +268,14 @@ a {
   text-transform: uppercase;
 }
 
+.bgColor {
+  background: #FAE5FF;
+}
+
 .wrapper {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
+  border: 1px solid red;
 }
 
 .visually-hidden {
@@ -296,7 +301,16 @@ header {
 }
 
 header a {
-  color: black;
+  color: white;
+  background: #4C0341;
+  padding: 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header a:hover, header a:focus {
+  color: #4C0341;
+  background: white;
 }
 
 header h1 {
@@ -318,6 +332,7 @@ header .navigation ul {
 
 header .navigation ul li {
   font-size: 2rem;
+  margin-top: 9px;
 }
 
 .landing {
@@ -330,7 +345,6 @@ header .navigation ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(../shoeAssets/header-image.jpg);
 }
 
 .landing h2 {
@@ -343,10 +357,16 @@ header .navigation ul li {
   width: 650px;
   position: relative;
   top: 150px;
+  left: 20px;
+}
+
+.headerPhoto {
+  background: url(../shoeAssets/header-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .sea {
-  background: #FAE5FF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -401,6 +421,22 @@ header .navigation ul li {
   height: 350px;
 }
 
+.newOption .newPhoto {
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+  -webkit-box-shadow: 20px 20px #FE6F19;
+          box-shadow: 20px 20px #FE6F19;
+}
+
+.newOption .optionPhoto {
+  position: relative;
+  left: 20px;
+  top: 20px;
+  -webkit-box-shadow: -20px -20px #FE6F19;
+          box-shadow: -20px -20px #FE6F19;
+}
+
 .newOption .newArticle h2, .newOption .optionArticle h2 {
   margin: 20px 0;
 }
@@ -419,10 +455,6 @@ header .navigation ul li {
 
 .newOption .newArticle {
   text-align: right;
-}
-
-.about {
-  background: #FAE5FF;
 }
 
 .about .aboutArticle {
@@ -461,7 +493,6 @@ header .navigation ul li {
   display: -ms-flexbox;
   display: flex;
   padding: 140px 40px;
-  background: #FAE5FF;
 }
 
 .popular .popularPhoto {
@@ -496,7 +527,6 @@ header .navigation ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #FAE5FF;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

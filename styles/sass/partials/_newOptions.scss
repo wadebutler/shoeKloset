@@ -16,6 +16,20 @@
         height: 350px;
     }
 
+    .newPhoto {
+        position: relative;
+        right: 20px;
+        bottom: 20px;
+        box-shadow: 20px 20px $borderColor;
+    }
+
+    .optionPhoto {
+        position: relative;
+        left: 20px;
+        top: 20px;
+        box-shadow: -20px -20px $borderColor;
+    }
+
     .newArticle, .optionArticle {
 
         h2 {

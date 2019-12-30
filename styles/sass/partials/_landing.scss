@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: url(../shoeAssets/header-image.jpg);
 
     h2 {
         font-size: 6rem;
@@ -14,5 +13,12 @@
         width: 650px;
         position: relative;
         top: 150px;
+        left: 20px;
     }
+}
+
+.headerPhoto {
+    background: url(../shoeAssets/header-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }

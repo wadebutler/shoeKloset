@@ -1,7 +1,6 @@
 .popular {
     display: flex;
     padding: 140px 40px;
-    background: $backgroundColor;
 
     .popularPhoto {
         width: 700px;
@@ -27,7 +26,6 @@
 
 .popularGallery {
     display: flex;
-    background: $backgroundColor;
     justify-content: center;
     
     figure {

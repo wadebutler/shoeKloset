@@ -6,7 +6,15 @@ header {
     z-index: 1;
 
     a {
-        color: $black;
+        color: $white;
+        background: $textColor;
+        padding: 10px;
+        transition: 0.4s;
+
+        &:hover, &:focus {
+            color: $textColor;
+            background: $white;
+        }
     }
 
     h1 {
@@ -23,6 +31,7 @@ header {
 
             li {
                 font-size: 2rem;
+                margin-top: 9px;
             }
         }
     }
