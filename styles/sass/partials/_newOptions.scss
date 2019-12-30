@@ -44,8 +44,16 @@
         a {
             color: $white;
             background: $accentColor;
+            border: 1px solid $white;
             padding: 10px;
             margin: 10px 0;
+            transition: 0.4s;
+
+            &:hover, &:focus {
+                color: $accentColor;
+                background: $white;
+                border: 1px solid $accentColor;
+            }
         }
     }
 

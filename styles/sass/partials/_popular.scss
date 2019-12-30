@@ -4,7 +4,8 @@
 
     .popularPhoto {
         width: 700px;
-        padding-right: 80px;
+        margin-right: 80px;
+        box-shadow: 20px 20px $borderColor;
     }
 
     .popularArticle {
@@ -19,7 +20,15 @@
         a {
             color: $white;
             background: $accentColor;
+            border: 1px solid rgba(255, 255, 255, 0);
             padding: 10px 20px;
+            transition: 0.4s;
+
+            &:hover, &:focus {
+                color: $accentColor;
+                background: $white;
+                border: 1px solid $accentColor;
+            }
         }
     }
 }
@@ -30,6 +39,11 @@
     
     figure {
         margin-bottom: 100px;
+        transition: 0.4s;
+
+        &:hover, &:focus {
+            transform: scale(1.1);
+        }
     }
 
     figure:nth-of-type(2) {

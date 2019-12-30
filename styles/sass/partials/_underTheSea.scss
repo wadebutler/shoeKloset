@@ -20,5 +20,13 @@
         padding: 10px 20px;
         color: $white;
         background: $textColor;
+        border: 1px solid rgba(255, 255, 255, 0);
+        transition: 0.4s;
+
+        &:hover, &:focus {
+            color: $textColor;
+            background: $white;
+            border: 1px solid $textColor;
+        }
     }
 }

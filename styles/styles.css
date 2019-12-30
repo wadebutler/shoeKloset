@@ -303,6 +303,7 @@ header {
 header a {
   color: white;
   background: #4C0341;
+  border: 1px solid rgba(255, 255, 255, 0);
   padding: 10px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -311,6 +312,7 @@ header a {
 header a:hover, header a:focus {
   color: #4C0341;
   background: white;
+  border: 1px solid #4C0341;
 }
 
 header h1 {
@@ -396,6 +398,15 @@ header .navigation ul li {
   padding: 10px 20px;
   color: white;
   background: #4C0341;
+  border: 1px solid rgba(255, 255, 255, 0);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.sea a:hover, .sea a:focus {
+  color: #4C0341;
+  background: white;
+  border: 1px solid #4C0341;
 }
 
 .newOption {
@@ -449,8 +460,17 @@ header .navigation ul li {
 .newOption .newArticle a, .newOption .optionArticle a {
   color: white;
   background: #882C07;
+  border: 1px solid white;
   padding: 10px;
   margin: 10px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.newOption .newArticle a:hover, .newOption .newArticle a:focus, .newOption .optionArticle a:hover, .newOption .optionArticle a:focus {
+  color: #882C07;
+  background: white;
+  border: 1px solid #882C07;
 }
 
 .newOption .newArticle {
@@ -481,6 +501,13 @@ header .navigation ul li {
 .about .aboutArticle .locationIcon a, .about .aboutArticle .comunityIcon a, .about .aboutArticle .blogIcon a, .about .aboutArticle .contactIcon a {
   font-size: 4rem;
   color: black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.about .aboutArticle .locationIcon a:hover, .about .aboutArticle .locationIcon a:focus, .about .aboutArticle .comunityIcon a:hover, .about .aboutArticle .comunityIcon a:focus, .about .aboutArticle .blogIcon a:hover, .about .aboutArticle .blogIcon a:focus, .about .aboutArticle .contactIcon a:hover, .about .aboutArticle .contactIcon a:focus {
+  border-bottom: 1px solid black;
 }
 
 .about .aboutArticle .locationIcon p, .about .aboutArticle .comunityIcon p, .about .aboutArticle .blogIcon p, .about .aboutArticle .contactIcon p {
@@ -497,7 +524,9 @@ header .navigation ul li {
 
 .popular .popularPhoto {
   width: 700px;
-  padding-right: 80px;
+  margin-right: 80px;
+  -webkit-box-shadow: 20px 20px #FE6F19;
+          box-shadow: 20px 20px #FE6F19;
 }
 
 .popular .popularArticle {
@@ -520,7 +549,16 @@ header .navigation ul li {
 .popular .popularArticle a {
   color: white;
   background: #882C07;
+  border: 1px solid rgba(255, 255, 255, 0);
   padding: 10px 20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.popular .popularArticle a:hover, .popular .popularArticle a:focus {
+  color: #882C07;
+  background: white;
+  border: 1px solid #882C07;
 }
 
 .popularGallery {
@@ -534,6 +572,13 @@ header .navigation ul li {
 
 .popularGallery figure {
   margin-bottom: 100px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.popularGallery figure:hover, .popularGallery figure:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .popularGallery figure:nth-of-type(2) {

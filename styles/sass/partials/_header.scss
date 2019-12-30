@@ -8,12 +8,14 @@ header {
     a {
         color: $white;
         background: $textColor;
+        border: 1px solid rgba(255, 255, 255, 0);
         padding: 10px;
         transition: 0.4s;
 
         &:hover, &:focus {
             color: $textColor;
             background: $white;
+            border: 1px solid $textColor;
         }
     }
 
