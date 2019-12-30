@@ -13,7 +13,6 @@
 
 .blogContent {
     display: flex;
-    background: $backgroundColor;
 
     aside {
         margin: 80px 80px 0 20px;
@@ -85,12 +84,12 @@
     }
 }
 
-form {
+.blogForm {
     display: flex;
     flex-direction: column;
     padding: 50px;
 
-    .inputs {
+    .blogInputs {
         display: flex;
         justify-content: space-around;
         width: 100%;
@@ -100,7 +99,7 @@ form {
             width: calc(50% - 20px);
             background: $backgroundColor;
             border: none;
-            border-bottom: 1px solid $borderColor;
+            border-bottom: 2px solid $borderColor;
             font-size: 2rem;
         }
     }
@@ -108,7 +107,7 @@ form {
     textarea {
         margin: 20px 0;
         padding: 10px;
-        border: 1px solid $borderColor;
+        border: 2px solid $borderColor;
         background: $backgroundColor;
         font-size: 2rem;
         line-height: 25px;
@@ -121,12 +120,12 @@ form {
         padding: 20px 0;
         margin-top: 10px;
         transition: 0.4s;
-        border: 1px solid rgba(255, 255, 255, 0);
+        border: 2px solid rgba(255, 255, 255, 0);
 
         &:hover, &:focus {
             color: $textColor;
             background: $white;
-            border: 1px solid $textColor;
+            border: 2px solid $textColor;
         }
     }
 }
