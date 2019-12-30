@@ -1,0 +1,40 @@
+.popular {
+    display: flex;
+    padding: 140px 40px;
+    background: $backgroundColor;
+
+    .popularPhoto {
+        width: 700px;
+        padding-right: 80px;
+    }
+
+    .popularArticle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h2 {
+            color: $textColor;
+        }
+
+        a {
+            color: $white;
+            background: $accentColor;
+            padding: 10px 20px;
+        }
+    }
+}
+
+.popularGallery {
+    display: flex;
+    background: $backgroundColor;
+    justify-content: center;
+    
+    figure {
+        margin-bottom: 100px;
+    }
+
+    figure:nth-of-type(2) {
+        padding: 0 40px;
+    }
+}
