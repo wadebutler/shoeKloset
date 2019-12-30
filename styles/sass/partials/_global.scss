@@ -1,5 +1,6 @@
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 img {
@@ -15,6 +16,11 @@ p {
 h2 {
     font-size: 5.2rem;
     text-transform: uppercase;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 a {

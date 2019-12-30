@@ -246,6 +246,7 @@ a {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -261,6 +262,11 @@ p {
 h2 {
   font-size: 5.2rem;
   text-transform: uppercase;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 a {
@@ -293,9 +299,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   position: fixed;
   z-index: 1;
 }
@@ -307,6 +312,7 @@ header a {
   padding: 10px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  border-radius: 5px;
 }
 
 header a:hover, header a:focus {
@@ -334,7 +340,7 @@ header .navigation ul {
 
 header .navigation ul li {
   font-size: 2rem;
-  margin-top: 9px;
+  margin-top: 5px;
 }
 
 .landing {
@@ -594,4 +600,148 @@ footer h4 {
   font-size: 2rem;
   text-align: center;
   padding: 20px;
+}
+
+.blogLanding {
+  background: url(../shoeAssets/blog-header.jpg);
+  height: 75vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blogLanding h2 {
+  text-align: center;
+  padding-top: 220px;
+  color: #4C0341;
+}
+
+.blogContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #FAE5FF;
+}
+
+.blogContent aside {
+  margin: 80px 80px 0 20px;
+}
+
+.blogContent aside .asideArticle {
+  background: white;
+  padding: 10px;
+}
+
+.blogContent aside .asideArticle h3 {
+  font-size: 3rem;
+  color: #4C0341;
+  padding-top: 40px;
+}
+
+.blogContent aside .asideArticle p {
+  line-height: 25px;
+}
+
+.blogContent aside .asideArticle li {
+  font-size: 2rem;
+  line-height: 25px;
+}
+
+.blogMain .blogArticle {
+  background: white;
+  padding: 30px;
+  padding-top: 60px;
+}
+
+.blogMain .blogArticle h2 {
+  color: #4C0341;
+}
+
+.blogMain .blogArticle p {
+  margin-top: 60px;
+  line-height: 25px;
+}
+
+.blogMain .blogPhoto {
+  position: relative;
+  right: 40px;
+  top: -60px;
+  -webkit-box-shadow: 40px 60px #FE6F19;
+          box-shadow: 40px 60px #FE6F19;
+}
+
+.comment {
+  padding: 60px 0;
+}
+
+.comment blockquote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+}
+
+.comment blockquote .personPhoto {
+  width: 200px;
+  height: 100px;
+  padding-right: 20px;
+}
+
+.comment blockquote p {
+  line-height: 25px;
+  padding-top: 20px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px;
+}
+
+form .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  padding: 10px 0;
+}
+
+form .inputs input {
+  width: calc(50% - 20px);
+  background: #FAE5FF;
+  border: none;
+  border-bottom: 1px solid #FE6F19;
+  font-size: 2rem;
+}
+
+form textarea {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #FE6F19;
+  background: #FAE5FF;
+  font-size: 2rem;
+  line-height: 25px;
+}
+
+form button {
+  color: white;
+  background: #4C0341;
+  font-size: 2rem;
+  padding: 20px 0;
+  margin-top: 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+form button:hover, form button:focus {
+  color: #4C0341;
+  background: white;
+  border: 1px solid #4C0341;
 }

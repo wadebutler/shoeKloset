@@ -1,7 +1,7 @@
 header {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     position: fixed;
     z-index: 1;
 
@@ -11,6 +11,7 @@ header {
         border: 1px solid rgba(255, 255, 255, 0);
         padding: 10px;
         transition: 0.4s;
+        border-radius: 5px;
 
         &:hover, &:focus {
             color: $textColor;
@@ -33,7 +34,7 @@ header {
 
             li {
                 font-size: 2rem;
-                margin-top: 9px;
+                margin-top: 5px;
             }
         }
     }
