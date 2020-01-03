@@ -249,6 +249,14 @@ html {
   scroll-behavior: smooth;
 }
 
+h1, h2, h3, h4 {
+  font-family: "Pompiere", cursive;
+}
+
+a, p {
+  font-family: "Lato", sans-serif;
+}
+
 img {
   width: 100%;
   height: 100%;
@@ -360,6 +368,7 @@ header .navigation ul li {
   font-size: 6rem;
   color: #4C0341;
   width: 20%;
+  padding-left: 80px;
 }
 
 .landing .landingPhoto {
@@ -551,6 +560,10 @@ header .navigation ul li {
 
 .popular .popularArticle h2 {
   color: #4C0341;
+}
+
+.popular .popularArticle p {
+  line-height: 25px;
 }
 
 .popular .popularArticle a {
