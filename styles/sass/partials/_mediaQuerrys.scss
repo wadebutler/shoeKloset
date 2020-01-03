@@ -1,1 +1,37 @@
 // INDEX
+
+@media (max-width: 965px) {
+
+    .landing {
+        height: 70vh;
+        justify-content: center;
+
+        h2 {
+            padding-left: 0;
+        }
+
+        .landingPhoto {
+            display: none;
+        }
+    }
+
+    .sea {
+
+        p {
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 55%;
+    }
+
+    .sea {
+
+        h2 {
+            text-align: center;
+        }
+    }
+}
