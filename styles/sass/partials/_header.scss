@@ -29,7 +29,6 @@ header {
 
     .navigation {
         width: 40%;
-        
 
         ul {
             display: flex;
@@ -39,6 +38,71 @@ header {
                 font-size: 2rem;
                 margin-top: 5px;
             }
+        }
+    }
+
+    .smallNav {
+        display: none;
+        position: relative;
+        // transition: 0.4s;
+        
+        label {
+            position: fixed;
+            top: 0;
+            right: 0;
+            font-size: 6rem;
+            color: white;
+            background: $textColor;
+            padding: 10px;
+            border: 2px solid rgba(255, 255, 255, 0);
+            border-radius: 0 0 0 10px;
+            transition: 0.4s;
+
+            i {
+                padding-top: 10px;
+            }
+
+            &:hover {
+                color: $textColor;
+                background: white;
+                border: 2px solid $textColor;
+            }
+        }
+
+        input {
+            transition: 0.4s;
+
+            &:focus + label {
+                color: $textColor;
+                background: white;
+                border: 2px solid $textColor;
+            }
+
+            &:checked ~ .smallNavMenu {
+                left: 230px;
+            }
+
+            &:checked ~ label {
+                padding-bottom: 300px;
+                padding-left: 200px;
+                border: 2px solid $textColor;
+            }
+
+        }
+
+        .smallNavMenu {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 1000px;
+            top: 100px;
+            transition: 0.4s;
+
+
+            li {
+                display: flex;
+            }
+            
         }
     }
 }

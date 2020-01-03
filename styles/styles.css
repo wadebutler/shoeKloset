@@ -354,6 +354,77 @@ header .navigation ul li {
   margin-top: 5px;
 }
 
+header .smallNav {
+  display: none;
+  position: relative;
+}
+
+header .smallNav label {
+  position: fixed;
+  top: 0;
+  right: 0;
+  font-size: 6rem;
+  color: white;
+  background: #4C0341;
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-radius: 0 0 0 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header .smallNav label i {
+  padding-top: 10px;
+}
+
+header .smallNav label:hover {
+  color: #4C0341;
+  background: white;
+  border: 2px solid #4C0341;
+}
+
+header .smallNav input {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header .smallNav input:focus + label {
+  color: #4C0341;
+  background: white;
+  border: 2px solid #4C0341;
+}
+
+header .smallNav input:checked ~ .smallNavMenu {
+  left: 230px;
+}
+
+header .smallNav input:checked ~ label {
+  padding-bottom: 300px;
+  padding-left: 200px;
+  border: 2px solid #4C0341;
+}
+
+header .smallNav .smallNavMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  left: 1000px;
+  top: 100px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header .smallNav .smallNavMenu li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .landing {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -880,7 +951,25 @@ footer h4 {
   border: 2px solid #882C07;
 }
 
+@media (max-width: 1200px) {
+  .landing .landingPhoto {
+    left: 0;
+  }
+  .newOption .optionPhoto {
+    left: 0;
+  }
+}
+
 @media (max-width: 965px) {
+  header h1 {
+    display: none;
+  }
+  header .navigation {
+    display: none;
+  }
+  header .smallNav {
+    display: block;
+  }
   .landing {
     height: 70vh;
     -webkit-box-pack: center;
@@ -893,8 +982,91 @@ footer h4 {
   .landing .landingPhoto {
     display: none;
   }
+  .popular {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .popular .popularArticle {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 60px;
+    text-align: center;
+  }
+  .popular .popularArticle p {
+    margin: 40px 0;
+  }
+  .popular .popularPhoto {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin: 0 auto;
+    width: 500px;
+  }
+}
+
+@media (max-width: 900px) {
+  .newOption {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 30px;
+  }
+  .newOption .newPhoto, .newOption .optionPhoto {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin: 0 auto;
+    bottom: 0;
+    top: 0;
+    width: 400px;
+  }
   .sea p {
     width: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  .popularGallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .popularGallery figure:nth-of-type(2) {
+    padding: 40px;
+  }
+  .popularGallery figure {
+    padding: 40px;
+  }
+  .popularGallery figure:hover, .popularGallery figure:focus {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .about .aboutArticle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .aboutArticle .locationIcon, .about .aboutArticle .comunityIcon, .about .aboutArticle .blogIcon, .about .aboutArticle .phoneIcon {
+    padding: 0px;
+  }
+  .popular {
+    padding: 70px 10px;
+  }
+  .popular .popularPhoto {
+    width: 250px;
   }
 }
 
@@ -904,5 +1076,14 @@ footer h4 {
   }
   .sea h2 {
     text-align: center;
+  }
+  .newOption .newArticle p, .newOption .optionArticle p {
+    margin: 40px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .newOption .newPhoto, .newOption .optionPhoto {
+    display: none;
   }
 }

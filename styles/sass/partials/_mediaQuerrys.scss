@@ -1,6 +1,35 @@
 // INDEX
 
+@media (max-width: 1200px) {
+
+    .landing {
+        .landingPhoto {
+            left: 0;
+        }
+    }
+
+    .newOption {
+        .optionPhoto {
+            left: 0;
+        }
+    }
+}
+
 @media (max-width: 965px) {
+
+    header {
+        h1 {
+            display: none;
+        }
+
+        .navigation {
+            display: none;
+        }
+
+        .smallNav {
+            display: block;
+        }
+    }
 
     .landing {
         height: 70vh;
@@ -15,10 +44,84 @@
         }
     }
 
-    .sea {
+    .popular {
+        flex-direction: column;
 
+        .popularArticle {
+            align-items: center;
+            margin-top: 60px;
+            text-align: center;
+
+            p {
+                margin: 40px 0;
+            }
+        }
+
+        .popularPhoto {
+            box-shadow: none;
+            margin: 0 auto;
+            width: 500px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .newOption {
+        display: flex;
+        flex-direction: column;
+        padding: 0 30px;
+
+        .newPhoto, .optionPhoto {
+            box-shadow: none;
+            margin: 0 auto;
+            bottom: 0;
+            top: 0;
+            width: 400px;
+        }
+    }
+    
+
+    .sea {
         p {
             width: 90%;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .popularGallery {
+        flex-direction: column;
+
+        figure:nth-of-type(2) {
+            padding: 40px;
+        }
+
+        figure {
+            padding: 40px;
+
+            &:hover, &:focus {
+                transform: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .about {
+        .aboutArticle {
+            display: flex;
+            flex-direction: column;
+
+            .locationIcon, .comunityIcon, .blogIcon, .phoneIcon {
+                padding: 0px;
+            }
+        }
+    }
+
+    .popular {
+        padding: 70px 10px;
+        .popularPhoto {
+            width: 250px;
         }
     }
 }
@@ -32,6 +135,22 @@
 
         h2 {
             text-align: center;
+        }
+    }
+
+    .newOption {
+        .newArticle, .optionArticle {
+            p {
+                margin: 40px 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .newOption {
+        .newPhoto, .optionPhoto {
+            display: none;
         }
     }
 }
