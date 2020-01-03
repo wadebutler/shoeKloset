@@ -356,7 +356,9 @@ header .navigation ul li {
 
 header .smallNav {
   display: none;
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 header .smallNav label {
@@ -395,7 +397,8 @@ header .smallNav input:focus + label {
 }
 
 header .smallNav input:checked ~ .smallNavMenu {
-  left: 230px;
+  top: 100px;
+  right: 100px;
 }
 
 header .smallNav input:checked ~ label {
@@ -405,16 +408,9 @@ header .smallNav input:checked ~ label {
 }
 
 header .smallNav .smallNavMenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   position: absolute;
-  left: 1000px;
   top: 100px;
+  right: -1000px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -1084,6 +1080,59 @@ footer h4 {
 
 @media (max-width: 400px) {
   .newOption .newPhoto, .newOption .optionPhoto {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .comment blockquote {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .comment blockquote .personPhoto {
+    width: 100px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  aside {
+    display: none;
+  }
+  .blogMain .blogPhoto {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    right: 0;
+    top: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .blogMain .blogPhoto {
+    width: 300px;
+    margin: 0 auto;
+    top: 0;
+    padding: 10px 0;
+  }
+  .blogForm {
+    padding: 50px 10px;
+  }
+  .blogForm .blogInputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogForm .blogInputs input {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .blogMain .blogPhoto {
     display: none;
   }
 }

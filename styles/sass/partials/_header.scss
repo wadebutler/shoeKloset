@@ -43,8 +43,9 @@ header {
 
     .smallNav {
         display: none;
-        position: relative;
-        // transition: 0.4s;
+        position: absolute;
+        top: 0;
+        right: 0;
         
         label {
             position: fixed;
@@ -79,7 +80,8 @@ header {
             }
 
             &:checked ~ .smallNavMenu {
-                left: 230px;
+                top: 100px;
+                right: 100px;
             }
 
             &:checked ~ label {
@@ -91,11 +93,9 @@ header {
         }
 
         .smallNavMenu {
-            display: flex;
-            flex-direction: column;
             position: absolute;
-            left: 1000px;
             top: 100px;
+            right: -1000px;
             transition: 0.4s;
 
 

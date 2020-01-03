@@ -149,3 +149,62 @@
 }
 
 // BLOG
+@media (max-width: 1200px) {
+
+    .comment {
+        blockquote {
+            flex-direction: column;
+
+            .personPhoto {
+                width: 100px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    aside {
+        display: none;
+    }
+
+    .blogMain {
+        .blogPhoto {
+            box-shadow: none;
+            right: 0;
+            top: 10px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .blogMain {
+        .blogPhoto {
+            width: 300px;
+            margin: 0 auto;
+            top: 0;
+            padding: 10px 0;
+        }
+    }
+
+    .blogForm {
+        padding: 50px 10px;
+
+        .blogInputs {
+            flex-direction: column;
+
+            input {
+                width: 100%;
+                margin: 20px 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .blogMain {
+        .blogPhoto {
+            display: none;
+        }
+    }
+}
