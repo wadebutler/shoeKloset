@@ -1135,4 +1135,15 @@ footer h4 {
   .blogMain .blogPhoto {
     display: none;
   }
+  .blogForm {
+    padding: 50px 0px;
+    width: 290px;
+    margin: 0 auto;
+  }
+  .blogForm .blogInputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }

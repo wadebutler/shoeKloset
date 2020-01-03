@@ -207,4 +207,14 @@
             display: none;
         }
     }
+
+    .blogForm {
+        padding: 50px 0px;
+        width: 290px;
+        margin: 0 auto;
+
+        .blogInputs {
+            flex-direction: column;
+        }
+    }
 }
